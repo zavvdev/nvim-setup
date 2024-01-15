@@ -2,8 +2,7 @@ return {
   "f-person/git-blame.nvim",
   config = function()
     require("gitblame").setup({
-      -- :GitBlameToggle to enable/disable
-      enabled = false,
+      delay = 1500,
     })
   end,
 }

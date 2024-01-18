@@ -1,3 +1,5 @@
+vim.cmd("source $HOME/.config/nvim/config.vim")
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
 if not vim.loop.fs_stat(lazypath) then

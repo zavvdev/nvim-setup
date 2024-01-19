@@ -12,6 +12,9 @@ function! NetrwMapping()
   nmap <buffer> fx mm
   nmap <buffer> fX mtmm
   nmap <buffer> f; mx
+  nmap <buffer> fb mb
+  nmap <buffer> fbg gb
+  nmap <buffer> fbr mB
   
   nmap <buffer> flm :echo join(netrw#Expose("netrwmarkfilelist"), "\n")<CR>
 endfunction

@@ -1,22 +1,22 @@
 function! NetrwMapping()
-  nmap <buffer> <TAB> mf
-  nmap <buffer> <Leader><TAB> mu
-  nmap <buffer> <S-TAB> mt
+  nmap <buffer> <TAB> mf         " Mark a file
+  nmap <buffer> <Leader><TAB> mu " Unmark all marked files
+  nmap <buffer> <S-TAB> mt       " Current browsing directory becomes markfile target
   
-  nmap <buffer> ff %
-  nmap <buffer> fd d
-  nmap <buffer> fe R
-  nmap <buffer> fr D
-  nmap <buffer> fc mc
-  nmap <buffer> fC mtmc
-  nmap <buffer> fx mm
-  nmap <buffer> fX mtmm
-  nmap <buffer> f; mx
-  nmap <buffer> fb mb
-  nmap <buffer> fbg gb
-  nmap <buffer> fbr mB
+  nmap <buffer> ff %             " Create a new file
+  nmap <buffer> fd d             " Create a new directory
+  nmap <buffer> fe R             " Edit file/directory name
+  nmap <buffer> fr D             " Delete file or empty directory
+  nmap <buffer> fc mc            " Copy marked files to marked-file target directory
+  nmap <buffer> fC mtmc          " After you mark your files you can put the cursor in a directory and this will assign the target directory and copy in one step
+  nmap <buffer> fx mm            " Move marked files to marked-file target directory
+  nmap <buffer> fX mtmm          " Same thing as fC but for moving files
+  nmap <buffer> f; mx            " Run external shell command on marked files
+  nmap <buffer> fb mb            " Bookmark current directory
+  nmap <buffer> fbg gb           " Go to previous bookmarked directory
+  nmap <buffer> fbr mB           " Remove most recent bookmark
   
-  nmap <buffer> flm :echo join(netrw#Expose("netrwmarkfilelist"), "\n")<CR>
+  nmap <buffer> flm :echo join(netrw#Expose("netrwmarkfilelist"), "\n")<CR> " Show a list of marked files
 endfunction
 
 augroup netrw_mapping

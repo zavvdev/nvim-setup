@@ -10,4 +10,4 @@ vim.cmd("set relativenumber")
 vim.g.mapleader = " "
 vim.g.netrw_banner = 0
 
-vim.keymap.set("n", "<leader>e", ":Explore<CR>", {})
+vim.keymap.set("n", "<leader>e", ":Explore<CR>", {}) -- Open Netrw

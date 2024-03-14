@@ -15,6 +15,7 @@ return {
           "phpactor",
           "html",
           "cssls",
+          "rust_analyzer",
         },
       })
     end,

@@ -11,3 +11,4 @@ vim.g.mapleader = " "
 vim.g.netrw_banner = 0
 
 vim.keymap.set("n", "<leader>e", ":Explore<CR>", {}) -- Open Netrw
+vim.keymap.set("n", "<leader>si", ":lua vim.diagnostic.setqflist()<CR>", {}) -- Show diagnostic errors

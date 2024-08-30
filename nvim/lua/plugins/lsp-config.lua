@@ -16,6 +16,7 @@ return {
           "html",
           "cssls",
           "rust_analyzer",
+          "tailwindcss",
         },
       })
     end,
@@ -47,6 +48,14 @@ return {
       })
 
       lspconfig.phpactor.setup({
+        capabilities = capabilities,
+      })
+
+      lspconfig.tailwindcss.setup({
+        capabilities = capabilities,
+      })
+
+      lspconfig.csharp_ls.setup({
         capabilities = capabilities,
       })
 

@@ -23,3 +23,11 @@ augroup netrw_mapping
   autocmd!
   autocmd filetype netrw call NetrwMapping()
 augroup END
+
+" Multiline edit:
+" 1. Put cursor on the first line you want to start from
+" 2. Press Ctrl+V
+" 3. Move cursor down to select the other lines you want to edit
+" 4. Press A
+" 5. Type the text you want to add
+" 6. Press Esc

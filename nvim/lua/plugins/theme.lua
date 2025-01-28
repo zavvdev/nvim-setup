@@ -1,8 +1,9 @@
 return {
-  "fenetikm/falcon",
-  name = "falcon",
+  "cideM/yui",
+  -- "fenetikm/falcon",
+  name = "yui",
   priority = 1000,
   config = function()
-    vim.cmd.colorscheme("falcon")
+    vim.cmd.colorscheme("yui")
   end,
 }

@@ -9,8 +9,6 @@ return {
         null_ls.builtins.formatting.joker,
         null_ls.builtins.formatting.pint,
         null_ls.builtins.formatting.csharpier,
-        null_ls.builtins.formatting.clojure_lsp,
-        null_ls.builtins.diagnostics.clj_kondo,
         null_ls.builtins.diagnostics.eslint_d.with({
           condition = function(utils)
             return utils.root_has_file({ ".eslintrc.js", ".eslintrc.json", ".eslintrc.cjs" })

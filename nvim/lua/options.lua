@@ -20,11 +20,10 @@ vim.g.yui_comments = "fade"
 
 -- Start a REPL first with lein repl, and then use :ConjureConnect [host] [port] to connect to it
 
-vim.keymap.set("n", "<leader>je", ":ConjureEval<CR>", { silent = true })
-vim.keymap.set("n", "<leader>jef", ":ConjureEvalFile<CR>", { silent = true })
-vim.keymap.set("n", "<leader>jec", ":ConjureEvalCurrentForm<CR>", { silent = true })
+vim.keymap.set("n", "<leader>jf", ":ConjureEvalFile<CR>")
+vim.keymap.set("n", "<leader>jj", ":ConjureEvalCurrentForm<CR>")
 
 --
 
-vim.keymap.set("n", "<leader>e", ":Explore<CR>", {})                         -- Open Netrw
+vim.keymap.set("n", "<leader>e", ":Explore<CR>", {}) -- Open Netrw
 vim.keymap.set("n", "<leader>si", ":lua vim.diagnostic.setqflist()<CR>", {}) -- Show diagnostic errors

@@ -60,6 +60,21 @@ return {
         capabilities = capabilities,
       })
 
+      -- if you're getting "multiple different client offset_encodings detected" error
+      -- then go to ~/.local/share/nvim/lazy/nvim-lspconfig/lua/lspconfig/server_configuration/clangd.lua
+      -- and search for:
+      -- local default_capabilities = {
+      -- textDocument = {
+      --     completion = {
+      --       editsNearCursor = true,
+      --     },
+      --   },
+      --   offsetEncoding = { 'utf-8', 'utf-16' }
+      -- }
+      --
+      -- and change offsetEncoding = { 'utf-8', 'utf-16' } to offsetEncoding = 'utf-8',
+      -- if you have buffer with utf-8
+
       lspconfig.clangd.setup({
         capabilities = capabilities,
       })

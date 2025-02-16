@@ -17,6 +17,7 @@ return {
           "cssls",
           "rust_analyzer",
           "tailwindcss",
+          "clangd",
         },
       })
     end,
@@ -56,6 +57,10 @@ return {
       })
 
       lspconfig.csharp_ls.setup({
+        capabilities = capabilities,
+      })
+
+      lspconfig.clangd.setup({
         capabilities = capabilities,
       })
 

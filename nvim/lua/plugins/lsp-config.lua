@@ -18,6 +18,7 @@ return {
           "rust_analyzer",
           "tailwindcss",
           "clangd",
+          "angularls",
         },
       })
     end,
@@ -76,6 +77,10 @@ return {
       -- if you have buffer with utf-8
 
       lspconfig.clangd.setup({
+        capabilities = capabilities,
+      })
+
+      lspconfig.angularls.setup({
         capabilities = capabilities,
       })
 

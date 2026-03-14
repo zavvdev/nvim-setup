@@ -10,15 +10,11 @@ return {
     config = function()
       require("mason-lspconfig").setup({
         ensure_installed = {
-          "tsserver",
-          "clojure_lsp",
-          "phpactor",
+          "ts_ls",
           "html",
           "cssls",
           "rust_analyzer",
-          "tailwindcss",
           "clangd",
-          "angularls",
         },
       })
     end,
@@ -29,11 +25,7 @@ return {
       local lspconfig = require("lspconfig")
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-      lspconfig.clojure_lsp.setup({
-        capabilities = capabilities,
-      })
-
-      lspconfig.tsserver.setup({
+      lspconfig.ts_ls.setup({
         capabilities = capabilities,
       })
 
@@ -45,55 +37,19 @@ return {
         capabilities = capabilities,
       })
 
-      lspconfig.lua_ls.setup({
-        capabilities = capabilities,
-      })
-
-      lspconfig.phpactor.setup({
-        capabilities = capabilities,
-      })
-
-      lspconfig.tailwindcss.setup({
-        capabilities = capabilities,
-      })
-
-      lspconfig.csharp_ls.setup({
-        capabilities = capabilities,
-      })
-
-      -- if you're getting "multiple different client offset_encodings detected" error
-      -- then go to ~/.local/share/nvim/lazy/nvim-lspconfig/lua/lspconfig/server_configuration/clangd.lua
-      -- and search for:
-      -- local default_capabilities = {
-      -- textDocument = {
-      --     completion = {
-      --       editsNearCursor = true,
-      --     },
-      --   },
-      --   offsetEncoding = { 'utf-8', 'utf-16' }
-      -- }
-      --
-      -- and change offsetEncoding = { 'utf-8', 'utf-16' } to offsetEncoding = 'utf-8',
-      -- if you have buffer with utf-8
-
       lspconfig.clangd.setup({
         capabilities = capabilities,
-      })
-
-      lspconfig.angularls.setup({
-        capabilities = capabilities,
+        textDocument = {
+          completion = {
+            editsNearCursor = true,
+          },
+        },
+        offsetEncoding = "utf-8",
+        filetypes = { "c", "cpp", "objc", "objcpp" },
       })
 
       lspconfig.rust_analyzer.setup({
         capabilities = capabilities,
-        filetypes = { "rust" },
-        settings = {
-          ["rust-analyzer"] = {
-            cargo = {
-              allFeatures = true,
-            },
-          },
-        },
       })
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})

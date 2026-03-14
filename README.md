@@ -100,7 +100,17 @@ thanks <3 https://github.com/cpow
 
 17. Move line/lines of code forward: `> >`
 
-17. Move line/lines of code backward: `< <`
+18. Move line/lines of code backward: `< <`
+
+19. Copy to vim buffer: `y`
+
+20. Paste from vim buffer: `p`
+
+21. Copy to clipboard: `" + y`
+
+22. Add multiline prefix: `Leader a a, add text to the beggining of the first line, Esc`
+
+23. Remove multiline prefix: `Leader a r, select prefix, x`
 
 ## LSP
 

@@ -18,3 +18,6 @@ vim.g.yui_comments = "fade"
 
 vim.keymap.set("n", "<leader>e", ":Explore<CR>", {})                         -- Open Netrw
 vim.keymap.set("n", "<leader>si", ":lua vim.diagnostic.setqflist()<CR>", {}) -- Show diagnostic errors
+
+vim.keymap.set("v", "<leader>aa", "<C-v>A", { noremap = true, silent = true })
+vim.keymap.set("v", "<leader>ar", "<C-v>", { noremap = true, silent = true })

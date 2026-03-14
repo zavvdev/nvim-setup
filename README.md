@@ -126,6 +126,8 @@ Everything that is inside _nvim_ folder in this repo should be in _~/.config/nvi
 
 24. Remove multiline prefix: `Leader a r, select prefix, x`
 
+25. Split vertically: `v`
+
 ### LSP
 
 1. Hover over variable/function for showing details: `K`

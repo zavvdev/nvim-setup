@@ -246,9 +246,9 @@ For more information about plugins see [Mason](https://github.com/mason-org/maso
 
 `ma` - set current position for mark A
 
-`\`a` - jump to position of mark A
+**`a** - jump to position of mark A
 
-`\`.` - go to the position of the last change in this file
+**`.** - go to the position of the last change in this file
 
 ### Macros
 

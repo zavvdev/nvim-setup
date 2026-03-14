@@ -14,11 +14,7 @@ Everything that is inside _nvim_ folder in this repo should be in _~/.config/nvi
 
 ## Keybindings
 
-1. Leader key: `Space`
-
-2. Enter insert mode: `a`
-
-3. Enter visual mode: `v`
+Leader key: `Space`
 
 ### File system
 
@@ -80,53 +76,35 @@ Everything that is inside _nvim_ folder in this repo should be in _~/.config/nvi
 
 1. Show list of errors in current file: `Leader s i`
 
-2. Replace in file: `:%s/some text to replace/text to replace with`
+2. Search for pattern in file: `?`
 
-3. Search for pattern in file: `?`
+3. Search for word under the cursor: `*`
 
-4. Search for word under the cursor: `*`
+4. Go to specific line in file: `:<line number>`
 
-5. Go to specific line in file: `:<line number>`
+5. Format file according to formatting rules: `Leader f m`
 
-6. Format file according to formatting rules: `Leader f m`
+6. Line comment selected lines: `g c c`
 
-7. Line comment selected lines: `g c c`
+7. Block comment selected lines: `g b c`
 
-8. Block comment selected lines: `g b c`
+8. Go to the very top of the file: `g g`
 
-9. Go to the very top of the file: `g g`
+9. Go to the very bottom of the file: `G`
 
-10. Go to the very bottom of the file: `G`
+10. Scroll down: `Ctrl d`
 
-11. Scroll down: `Ctrl d`
+11. Scroll up: `Ctrl u`
 
-12. Scroll up: `Ctrl u`
+12. Go to the closed/start bracket/paren/tag of the bracket/pare/tag under cursor: `%`
 
-13. Undo: `u`
+13. Copy to clipboard: `" + y`
 
-14. Re-do: `Ctrl r`
+14. Add multiline prefix: `Leader a a, add text to the beggining of the first line, Esc`
 
-15. Go to the end of the line: `$`
+15. Remove multiline prefix: `Leader a r, select prefix, x`
 
-16. Got to the start of the line: `^`
-
-17. Go to the closed/start bracket/paren/tag of the bracket/pare/tag under cursor: `%`
-
-18. Move line/lines of code forward: `> >`
-
-19. Move line/lines of code backward: `< <`
-
-20. Copy to vim buffer: `y`
-
-21. Paste from vim buffer: `p`
-
-22. Copy to clipboard: `" + y`
-
-23. Add multiline prefix: `Leader a a, add text to the beggining of the first line, Esc`
-
-24. Remove multiline prefix: `Leader a r, select prefix, x`
-
-25. Split vertically: `v`
+16. Split vertically: `v`
 
 ### LSP
 
@@ -151,3 +129,211 @@ For more information about resolving merge conflicts with diff view press `g ?` 
 1. Open package manager: `:Mason`
 
 For more information about plugins see [Mason](https://github.com/mason-org/mason.nvim) documentation.
+
+## Other useful keybindings
+
+### Cursor movement
+
+`e` - jump forwards to the end of a word
+
+`b` - jump backward to the end of a word
+
+`%` - move cursor to matching character (default supported pairs: '()', '{}', '[]' - use :h matchpairs in vim for more info)
+
+`0` - jump to the start of the line
+
+`^` - jump to the first non-blank character of the line
+
+`$` - jump to the end of the line
+
+`g_` - jump to the last non-blank character of the line
+
+`gg` - go to the first line of the document
+
+`G` - go to the last line of the document
+
+`}` - jump to next paragraph (or function/block, when editing code)
+
+`{` - jump to previous paragraph (or function/block, when editing code)
+
+### Insert mode - inserting/appending text
+
+`i` - insert before the cursor
+
+`I` - insert at the beginning of the line
+
+`a` - insert (append) after the cursor
+
+`A` - insert (append) at the end of the line
+
+`o` - append (open) a new line below the current line
+
+`O` - append (open) a new line above the current line
+
+`ea` - insert (append) at the end of the word
+
+`Ctrl + w` - delete word before the cursor during insert mode
+
+`Ctrl + t` - indent (move right) line one shiftwidth during insert mode
+
+`Ctrl + d` - de-indent (move left) line one shiftwidth during insert mode
+
+`Ctrl + n` - insert (auto-complete) next match before the cursor during insert mode
+
+`Ctrl + p` - insert (auto-complete) previous match before the cursor during insert mode
+
+### Editing
+
+`r` - replace a single character.
+
+`R` - replace more than one character, until ESC is pressed.
+
+`J` - join line below to the current one with one space in between
+
+`cc` - change (replace) entire line
+
+`c$` or `C` - change (replace) to the end of the line
+
+`cw` or `ce` - change (replace) to the end of the word
+
+`s` - delete character and substitute text (same as cl)
+
+`S` - delete line and substitute text (same as cc)
+
+`u` - undo
+
+`Ctrl + r` - redo
+
+`.` - repeat last command
+
+### Marking text (visual mode)
+
+`v` - start visual mode, mark lines, then do a command (like y-yank)
+
+`V` - start linewise visual mode
+
+`Ctrl + v` - start visual block mode
+
+`a(` - a block with ()
+
+`a{` - a block with {}
+
+`at` - a block with <> tags
+
+`i(` - inner block with ()
+
+`i{` - inner block with {}
+
+`it` - inner block with <> tags
+
+### Visual commands
+
+`>` - shift text right
+
+`<` - shift text left
+
+`y` - yank (copy) marked text
+
+`d` - delete marked text
+
+`~` - switch case
+
+`u` - change marked text to lowercase
+
+`U` - change marked text to uppercase
+
+### Marks and positions
+
+`ma` - set current position for mark A
+
+`\`a` - jump to position of mark A
+
+`\`.` - go to the position of the last change in this file
+
+### Macros
+
+`qa` - record macro a
+
+`q` - stop recording macro
+
+`@a` - run macro a
+
+`@@` - rerun last run macro
+
+### Cut and paste
+
+`yy` - yank (copy) a line
+
+`Nyy` - yank (copy) N lines down
+
+`Ny<up|down>` - yank (copy) N lines up or down
+
+`yw` - yank (copy) the characters of the word from the cursor position to the start of the next word
+
+`yiw` - yank (copy) word under the cursor
+
+`y$` or `Y` - yank (copy) to end of line
+
+`p` - put (paste) the clipboard after cursor
+
+`P` - put (paste) before cursor
+
+`dd` - delete (cut) a line
+
+`Ndd` - delete (cut) N lines down
+
+`Nd<up|down>` - delete (cut) N lines up or down
+
+`dw` - delete (cut) the characters of the word from the cursor position to the start of the next word
+
+`:g/{pattern}/d` - delete all lines containing pattern
+
+`:g!/{pattern}/d` - delete all lines not containing pattern
+
+`d$ or D` - delete (cut) to the end of the line
+
+`x` - delete (cut) character
+
+### Indent text
+
+`>>` - indent (move right) line one shiftwidth
+
+`<<` - de-indent (move left) line one shiftwidth
+
+`>%` - indent a block with () or {} (cursor on brace)
+
+`<%` - de-indent a block with () or {} (cursor on brace)
+
+### Exiting
+
+`:w` - write (save) the file, but don't exit
+
+`:wq` - write (save) and quit
+
+`:q` - quit (fails if there are unsaved changes)
+
+`:qa` - quit all (fails if there are unsaved changes)
+
+`:q!` - quit and throw away unsaved changes
+
+`:wqa` - write (save) and quit on all tabs
+
+### Search and replace
+
+`/pattern` - search for pattern
+
+`?pattern` - search backward for pattern
+
+`n` - go forward in matched search result
+
+`N` - go backward in matched search result
+
+`:%s/old/new/g` - replace all old with new throughout file
+
+`:%s/old/new/gc` - replace all old with new throughout file with confirmations
+
+`:%s/old/new/gi` - replace global case insensitive
+
+`:%s/old/new/gI` - replace global case sensitive
+
+`:%s/old/new/gIc` - replace global case sensitive with confirmation

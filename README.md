@@ -119,3 +119,7 @@ thanks <3 https://github.com/cpow
 3. Open diff view for current file: `Leader d v f`
 
 For more information about resolving merge conflicts with diff view press `g ?` in diff view
+
+## Packages
+
+1. Open package manager: `:Mason`

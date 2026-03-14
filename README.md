@@ -72,45 +72,47 @@ thanks <3 https://github.com/cpow
 
 3. Search for pattern in file: `?`
 
-4. Go to specific line in file: `:<line number>`
+4. Search for word under the cursor: `*`
 
-5. Format file according to formatting rules: `Leader f m`
+5. Go to specific line in file: `:<line number>`
 
-6. Line comment selected lines: `g c c`
+6. Format file according to formatting rules: `Leader f m`
 
-7. Block comment selected lines: `g b c`
+7. Line comment selected lines: `g c c`
 
-8. Go to the very top of the file: `g g`
+8. Block comment selected lines: `g b c`
 
-9. Go to the very bottom of the file: `G`
+9. Go to the very top of the file: `g g`
 
-10. Scroll down: `Ctrl d`
+10. Go to the very bottom of the file: `G`
 
-11. Scroll up: `Ctrl u`
+11. Scroll down: `Ctrl d`
 
-12. Undo: `u`
+12. Scroll up: `Ctrl u`
 
-13. Re-do: `Ctrl r`
+13. Undo: `u`
 
-14. Go to the end of the line: `$`
+14. Re-do: `Ctrl r`
 
-15. Got to the start of the line: `^`
+15. Go to the end of the line: `$`
 
-16. Go to the closed/start bracket/paren/tag of the bracket/pare/tag under cursor: `%`
+16. Got to the start of the line: `^`
 
-17. Move line/lines of code forward: `> >`
+17. Go to the closed/start bracket/paren/tag of the bracket/pare/tag under cursor: `%`
 
-18. Move line/lines of code backward: `< <`
+18. Move line/lines of code forward: `> >`
 
-19. Copy to vim buffer: `y`
+19. Move line/lines of code backward: `< <`
 
-20. Paste from vim buffer: `p`
+20. Copy to vim buffer: `y`
 
-21. Copy to clipboard: `" + y`
+21. Paste from vim buffer: `p`
 
-22. Add multiline prefix: `Leader a a, add text to the beggining of the first line, Esc`
+22. Copy to clipboard: `" + y`
 
-23. Remove multiline prefix: `Leader a r, select prefix, x`
+23. Add multiline prefix: `Leader a a, add text to the beggining of the first line, Esc`
+
+24. Remove multiline prefix: `Leader a r, select prefix, x`
 
 ## LSP
 

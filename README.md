@@ -1,6 +1,18 @@
-thanks <3 https://github.com/cpow
+# Neovim Setup
 
-# Keybindings
+Minimum plugins used.
+
+_thanks <3 https://github.com/cpow_
+
+## Prerequisites
+
+1. [Neovim](https://neovim.io/) should be installed.
+
+Check where configuration lives in your system. On Mac it's in _~/.config/nvim_.
+
+Everything that is inside _nvim_ folder in this repo should be in _~/.config/nvim_.
+
+## Keybindings
 
 1. Leader key: `Space`
 
@@ -8,7 +20,7 @@ thanks <3 https://github.com/cpow
 
 3. Enter visual mode: `v`
 
-## File system
+### File system
 
 1. Create file: `f f`
 
@@ -18,7 +30,7 @@ thanks <3 https://github.com/cpow
 
 4. Delete file or empty directory: `f r`
 
-### Moving files
+#### Moving files
 
 1. Mark directory as target: `Shift Tab`. This is needed for moving/copying files to that target
 
@@ -36,7 +48,7 @@ thanks <3 https://github.com/cpow
 
 8. Run shell command on marked files: `f ;`. For example, mark non-empty directory, use _f ;_ and type _rm -r_ to delete the directory
 
-### Navigation
+#### Navigation
 
 1. Bookmark current directory: `f b`
 
@@ -52,7 +64,7 @@ thanks <3 https://github.com/cpow
 
 7. Open file tree: `Leader e`
 
-### Global Search
+#### Global Search
 
 1. Search in files: `Leader s f`
 
@@ -64,7 +76,7 @@ thanks <3 https://github.com/cpow
 
 5. Find recently opened files: `Leader ?`
 
-### File
+#### File
 
 1. Show list of errors in current file: `Leader s i`
 
@@ -114,7 +126,7 @@ thanks <3 https://github.com/cpow
 
 24. Remove multiline prefix: `Leader a r, select prefix, x`
 
-## LSP
+### LSP
 
 1. Hover over variable/function for showing details: `K`
 
@@ -122,7 +134,7 @@ thanks <3 https://github.com/cpow
 
 3. Code action: `Leader c a`
 
-## Git Diff
+### Git Diff
 
 1. Open diff view: `Leader d v`
 
@@ -132,6 +144,8 @@ thanks <3 https://github.com/cpow
 
 For more information about resolving merge conflicts with diff view press `g ?` in diff view
 
-## Packages
+### Packages
 
 1. Open package manager: `:Mason`
+
+For more information about plugins see [Mason](https://github.com/mason-org/mason.nvim) documentation.

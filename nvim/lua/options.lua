@@ -6,6 +6,7 @@ vim.cmd("set number")
 vim.cmd("set autoindent")
 vim.cmd("set updatetime=800")
 vim.cmd("set relativenumber")
+vim.cmd("set spell")
 
 vim.g.mapleader = " "
 vim.g.netrw_banner = 0

@@ -120,6 +120,9 @@ Leader key: `Space`
 
 21. Equalize split size: `Leader =`
 
+22. Put cursor in normal mode on number and do `A` to increase number or `X` to
+    decrease
+
 ### LSP
 
 1. Hover over variable/function for showing details: `K`

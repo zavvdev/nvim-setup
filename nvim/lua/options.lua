@@ -6,6 +6,9 @@ vim.cmd("set number")
 vim.cmd("set autoindent")
 vim.cmd("set updatetime=800")
 vim.cmd("set relativenumber")
+-- add more languages for spellchecking using comma separation (iso format)
+-- vim will download them on the next start
+vim.cmd("set spelllang=en_us")
 vim.cmd("set spell")
 
 vim.g.mapleader = " "

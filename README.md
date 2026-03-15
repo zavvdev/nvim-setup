@@ -60,6 +60,10 @@ Leader key: `Space`
 
 7. Open file tree: `Leader e`
 
+8. Open file in a new tab: Place curson on file in netrw and press: `t`
+
+9. Navigate to opened tab by number: `Ngt` where N is a tab number
+
 #### Global Search
 
 1. Search in files: `Leader s f`

@@ -32,3 +32,7 @@ vim.keymap.set("v", "<leader>ar", "<C-v>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>>", "10<C-w>>", { desc = "Increase window width by 10" })
 vim.keymap.set("n", "<leader><", "10<C-w><", { desc = "Decrease window width by 10" })
 vim.keymap.set("n", "<leader>=", "<C-w>=", { desc = "Equalize split sizes" })
+
+-- autocompletion
+vim.keymap.set("i", "<S-Tab>", "<C-n>", { noremap = true, desc = "Shift+Tab in insert mode" })
+vim.cmd("set complete=.,w,b,u,t")

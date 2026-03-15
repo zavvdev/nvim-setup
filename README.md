@@ -96,27 +96,29 @@ Leader key: `Space`
 
 9. Go to the very bottom of the file: `G`
 
-10. Scroll down: `Ctrl d`
+10. Toggle autocomplete in insert mode: `Shift Tab`
 
-11. Scroll up: `Ctrl u`
+11. Scroll down: `Ctrl d`
 
-12. Go to the closed/start bracket/paren/tag of the bracket/pare/tag under cursor: `%`
+12. Scroll up: `Ctrl u`
 
-13. Copy to clipboard: `" + y`
+13. Go to the closed/start bracket/paren/tag of the bracket/pare/tag under cursor: `%`
 
-14. Add multiline prefix: `Leader a a, add text to the beggining of the first line, Esc`
+14. Copy to clipboard: `" + y`
 
-15. Remove multiline prefix: `Leader a r, select prefix, x`
+15. Add multiline prefix: `Leader a a, add text to the beggining of the first line, Esc`
 
-16. Split vertically: `v` on file in netrw
+16. Remove multiline prefix: `Leader a r, select prefix, x`
 
-17. Split vertically: `Leader v` from file
+17. Split vertically: `v` on file in netrw
 
-18. Increase window width: `Leader >`
+18. Split vertically: `Leader v` from file
 
-19. Derease window width: `Leader <`
+19. Increase window width: `Leader >`
 
-20. Equalize split size: `Leader =`
+20. Derease window width: `Leader <`
+
+21. Equalize split size: `Leader =`
 
 ### LSP
 

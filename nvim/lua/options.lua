@@ -17,7 +17,14 @@ vim.g.yui_folds = "emphasize"
 vim.g.yui_comments = "fade"
 
 vim.keymap.set("n", "<leader>e", ":Explore<CR>", {})                         -- Open Netrw
+vim.keymap.set("n", "<leader>v", ":Vexplore<CR>", {})                         -- Vertical split from file
 vim.keymap.set("n", "<leader>si", ":lua vim.diagnostic.setqflist()<CR>", {}) -- Show diagnostic errors
 
+-- multiline edit
 vim.keymap.set("v", "<leader>aa", "<C-v>A", { noremap = true, silent = true })
 vim.keymap.set("v", "<leader>ar", "<C-v>", { noremap = true, silent = true })
+
+-- window resize
+vim.keymap.set("n", "<leader>>", "10<C-w>>", { desc = "Increase window width by 10" })
+vim.keymap.set("n", "<leader><", "10<C-w><", { desc = "Decrease window width by 10" })
+vim.keymap.set("n", "<leader>=", "<C-w>=", { desc = "Equalize split sizes" })

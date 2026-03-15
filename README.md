@@ -108,7 +108,15 @@ Leader key: `Space`
 
 15. Remove multiline prefix: `Leader a r, select prefix, x`
 
-16. Split vertically: `v`
+16. Split vertically: `v` on file in netrw
+
+17. Split vertically: `Leader v` from file
+
+18. Increase window width: `Leader >`
+
+19. Derease window width: `Leader <`
+
+20. Equalize split size: `Leader =`
 
 ### LSP
 

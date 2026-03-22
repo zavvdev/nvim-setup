@@ -2,148 +2,152 @@
 
 Minimum plugins used.
 
-_thanks <3 https://github.com/cpow_
-
 ## Prerequisites
 
 1. [Neovim](https://neovim.io/) should be installed.
 
+2. [Git](https://git-scm.com/) should be installed.
+
 Check where configuration lives in your system. On Mac it's in _~/.config/nvim_.
 
-Everything that is inside _nvim_ folder in this repo should be in _~/.config/nvim_.
+Everything that is inside _nvim_ folder in this repository should be in _~/.config/nvim_.
 
 ## Keybindings
 
-Leader key: `Space`
+Leader key: `Space`. Leader is the button that you press before using keybindings combo.
 
 ### File system
 
-1. Create file: `f f`
+From netrw:
 
-2. Create directory: `f d`
+1. Create file: `f f`.
 
-3. Edit file/directory name: `f e`
+2. Create directory: `f d`.
 
-4. Delete file or empty directory: `f r`
+3. Edit file/directory name under the cursor: `f e`.
+
+4. Delete file or empty directory under the cursor: `f r`.
 
 #### Moving files
 
-1. Mark directory as target: `Shift Tab`. This is needed for moving/copying files to that target
+From netrw:
 
-2. Mark file: `Tab`
+1. Mark directory as target: `Shift Tab`. This is needed for moving/copying files to that target.
 
-3. Unmark all marked files: `Leader Tab`
+2. Mark/unmark file/directory: `Tab`.
 
-4. Copy marked files to target directory: `f c`
+3. Unmark all marked files/directories: `Leader Tab`.
 
-5. Copy marked files to directory under the cursor: `f C`
+4. Copy marked files/directories to target directory: `f c`.
 
-6. Move marked files to target directory: `f x`
+5. Copy marked files/directories to directory under the cursor: `f C`.
 
-7. Moved marked files to directory under the cursor: `f X`
+6. Move marked files/directories to target directory: `f x`.
 
-8. Run shell command on marked files: `f ;`. For example, mark non-empty directory, use _f ;_ and type _rm -r_ to delete the directory
+7. Moved marked files/directories to directory under the cursor: `f X`.
+
+8. Run shell command on marked files/directories: `f ;`.
+   For example, mark non-empty directory, use _f ;_ and type _rm -r_ to delete the directory.
 
 #### Navigation
 
-1. Bookmark current directory: `f b`
+From netrw:
 
-2. Remove most recent bookmark: `f b r`
+1. Bookmark current directory: `f b`.
 
-3. Go to previous bookmarked directory: `f b g`
+2. Remove most recent bookmark: `f b r`.
 
-4. Show list of marked files: `f l m`
+3. Go to previous bookmarked directory: `f b g`.
 
-5. Change directory to current under cursor: `c d`
+4. Show list of marked files: `f l m`.
 
-6. Move one directory above: `-`
+5. Change directory to current under cursor: `c d`.
 
-7. Open file tree: `Leader e`
+6. Move one directory above: `-`.
 
-8. Open file in a new tab: Place curson on file in netrw and press: `t`
+7. Open file tree (from file): `Leader e`.
 
-9. Navigate to opened tab by number: `Ngt` where N is a tab number
+8. Open file in a new tab: Place cursor on file/directory press `t`.
+
+9. Navigate to opened tab by number: `Ngt` where N is a tab number.
 
 #### Global Search
 
-1. Search in files: `Leader s f`
+1. Search in files: `Leader s f`.
 
-2. Search in git files: `Leader s f g`
+2. Search in git files: `Leader s f g`.
 
-3. Search in files for current word under the cursor: `Leader s w`
+3. Search in files for current word under the cursor: `Leader s w`.
 
-4. Search by grep: `Leader s g`
+4. Search by grep: `Leader s g`.
 
-5. Find recently opened files: `Leader ?`
+5. Find recently opened files: `Leader ?`.
 
 #### File
 
-1. Show list of errors in current file: `Leader s i`
+1. Show list of errors in current file: `Leader s i`.
 
-2. Search for pattern in file: `?`
+2. Search for pattern in file: `?`.
 
-3. Search for word under the cursor: `*`
+3. Search for word under the cursor: `*`.
 
-4. Go to specific line in file: `:<line number>`
+4. Go to specific line in file: `:<line number>`.
 
-5. Format file according to formatting rules: `Leader f m`
+5. Format file according to formatting rules: `Leader f m`.
 
-6. Line comment selected lines: `g c c`
+6. Line comment selected lines: `g c c`.
 
-7. Block comment selected lines: `g b c`
+7. Block comment selected lines: `g b c`.
 
-8. Go to the very top of the file: `g g`
+8. Go to the very top of the file: `g g`.
 
-9. Go to the very bottom of the file: `G`
+9. Go to the very bottom of the file: `G`.
 
-10. Toggle autocomplete in insert mode: `Shift Tab`
+10. Toggle auto complete in insert mode: `Shift Tab`.
 
-11. Scroll down: `Ctrl d`
+11. Scroll down: `Ctrl d`.
 
-12. Scroll up: `Ctrl u`
+12. Scroll up: `Ctrl u`.
 
-13. Go to the closed/start bracket/paren/tag of the bracket/pare/tag under cursor: `%`
+13. Copy to clipboard: `" + y`.
 
-14. Copy to clipboard: `" + y`
+14. Add multiline prefix: `Leader a a, add text to the beggining of the first line, Esc`.
 
-15. Add multiline prefix: `Leader a a, add text to the beggining of the first line, Esc`
+15. Remove multiline prefix: `Leader a r, select prefix, x`.
 
-16. Remove multiline prefix: `Leader a r, select prefix, x`
+16. Split vertically: `v` on file in netrw.
 
-17. Split vertically: `v` on file in netrw
+17. Split vertically: `Leader v` from file.
 
-18. Split vertically: `Leader v` from file
+18. Increase window width: `Leader >`.
 
-19. Increase window width: `Leader >`
+19. Decrease window width: `Leader <`.
 
-20. Derease window width: `Leader <`
+20. Equalize split size: `Leader =`.
 
-21. Equalize split size: `Leader =`
-
-22. Put cursor in normal mode on number and do `A` to increase number or `X` to
-    decrease
+21. Put cursor in normal mode on number and do `A` to increase number or `X` to decrease.
 
 ### LSP
 
-1. Hover over variable/function for showing details: `K`
+1. Hover over variable/function for showing details: `K`.
 
-2. Go to definition: `g d`
+2. Go to definition: `g d`.
 
-3. Code action: `Leader c a`
+3. Code action: `Leader c a`.
 
 ### Git Diff
 
-1. Open diff view: `Leader d v`
+1. Open diff view: `Leader d v`.
 
-2. Close diff view: `Leader d v c`
+2. Close diff view: `Leader d v c`.
 
-3. Open diff view for current file: `Leader d v f`
+3. Open diff view for current file: `Leader d v f`.
 
-For more information about resolving merge conflicts with diff view press `g ?` in diff view
+For more information about resolving merge conflicts with diff view press `g ?` in diff view.
 
 ### Packages
 
-1. Open package manager: `:Mason`
+1. Open package manager: `:Mason`.
 
 For more information about plugins see [Mason](https://github.com/mason-org/mason.nvim) documentation.
 
@@ -151,53 +155,53 @@ For more information about plugins see [Mason](https://github.com/mason-org/maso
 
 ### Cursor movement
 
-`e` - jump forwards to the end of a word
+`e` - jump forwards to the end of a word.
 
-`b` - jump backward to the end of a word
+`b` - jump backward to the end of a word.
 
-`%` - move cursor to matching character (default supported pairs: '()', '{}', '[]' - use :h matchpairs in vim for more info)
+`%` - move cursor to matching character (default supported pairs: '()', '{}', '[]' - use :h matchpairs in vim for more info).
 
-`0` - jump to the start of the line
+`0` - jump to the start of the line.
 
-`^` - jump to the first non-blank character of the line
+`^` - jump to the first non-blank character of the line.
 
-`$` - jump to the end of the line
+`$` - jump to the end of the line.
 
-`g_` - jump to the last non-blank character of the line
+`g_` - jump to the last non-blank character of the line.
 
-`gg` - go to the first line of the document
+`gg` - go to the first line of the document.
 
-`G` - go to the last line of the document
+`G` - go to the last line of the document.
 
-`}` - jump to next paragraph (or function/block, when editing code)
+`}` - jump to next paragraph (or function/block, when editing code).
 
-`{` - jump to previous paragraph (or function/block, when editing code)
+`{` - jump to previous paragraph (or function/block, when editing code).
 
 ### Insert mode - inserting/appending text
 
-`i` - insert before the cursor
+`i` - insert before the cursor.
 
-`I` - insert at the beginning of the line
+`I` - insert at the beginning of the line.
 
-`a` - insert (append) after the cursor
+`a` - insert (append) after the cursor.
 
-`A` - insert (append) at the end of the line
+`A` - insert (append) at the end of the line.
 
-`o` - append (open) a new line below the current line
+`o` - append (open) a new line below the current line.
 
-`O` - append (open) a new line above the current line
+`O` - append (open) a new line above the current line.
 
-`ea` - insert (append) at the end of the word
+`ea` - insert (append) at the end of the word.
 
-`Ctrl + w` - delete word before the cursor during insert mode
+`Ctrl + w` - delete word before the cursor during insert mode.
 
-`Ctrl + t` - indent (move right) line one shiftwidth during insert mode
+`Ctrl + t` - indent (move right) line one shiftwidth during insert mode.
 
-`Ctrl + d` - de-indent (move left) line one shiftwidth during insert mode
+`Ctrl + d` - de-indent (move left) line one shiftwidth during insert mode.
 
-`Ctrl + n` - insert (auto-complete) next match before the cursor during insert mode
+`Ctrl + n` - insert (auto-complete) next match before the cursor during insert mode.
 
-`Ctrl + p` - insert (auto-complete) previous match before the cursor during insert mode
+`Ctrl + p` - insert (auto-complete) previous match before the cursor during insert mode.
 
 ### Editing
 
@@ -205,159 +209,158 @@ For more information about plugins see [Mason](https://github.com/mason-org/maso
 
 `R` - replace more than one character, until ESC is pressed.
 
-`J` - join line below to the current one with one space in between
+`J` - join line below to the current one with one space in between.
 
-`cc` - change (replace) entire line
+`cc` - change (replace) entire line.
 
-`c$` or `C` - change (replace) to the end of the line
+`c$` or `C` - change (replace) to the end of the line.
 
-`cw` or `ce` - change (replace) to the end of the word
+`cw` or `ce` - change (replace) to the end of the word.
 
-`s` - delete character and substitute text (same as cl)
+`s` - delete character and substitute text (same as cl).
 
-`S` - delete line and substitute text (same as cc)
+`S` - delete line and substitute text (same as cc).
 
-`u` - undo
+`u` - undo.
 
-`Ctrl + r` - redo
+`Ctrl + r` - redo.
 
-`.` - repeat last command
+`.` - repeat last command.
 
-`Ctrl v`, `$`, `A`, add something at the end, `Esc` - append to the end of
-multiple lines
+`Ctrl v`, `$`, `A`, add something at the end, `Esc` - append to the end of multiple lines.
 
 ### Marking text (visual mode)
 
-`v` - start visual mode, mark lines, then do a command (like y-yank)
+`v` - start visual mode, mark lines, then do a command (like y-yank).
 
-`V` - start linewise visual mode
+`V` - start linewise visual mode.
 
-`Ctrl + v` - start visual block mode
+`Ctrl + v` - start visual block mode.
 
-`a(` - a block with ()
+`a(` - a block with ().
 
-`a{` - a block with {}
+`a{` - a block with {}.
 
-`at` - a block with <> tags
+`at` - a block with <> tags.
 
-`i(` - inner block with ()
+`i(` - inner block with ().
 
-`i{` - inner block with {}
+`i{` - inner block with {}.
 
-`it` - inner block with <> tags
+`it` - inner block with <> tags.
 
 ### Visual commands
 
-`>` - shift text right
+`>` - shift text right.
 
-`<` - shift text left
+`<` - shift text left.
 
-`y` - yank (copy) marked text
+`y` - yank (copy) marked text.
 
-`d` - delete marked text
+`d` - delete marked text.
 
-`~` - switch case
+`~` - switch case.
 
-`u` - change marked text to lowercase
+`u` - change marked text to lowercase.
 
-`U` - change marked text to uppercase
+`U` - change marked text to uppercase.
 
 ### Marks and positions
 
-`ma` - set current position for mark A
+`ma` - set current position for mark A.
 
-**`a** - jump to position of mark A
+**`a** - jump to position of mark A.
 
-**`.** - go to the position of the last change in this file
+**`.** - go to the position of the last change in this file.
 
-`g,` - go to newer position in change list
+`g,` - go to newer position in change list.
 
-`g;` - go to older position in change list
+`g;` - go to older position in change list.
 
 ### Macros
 
-`qa` - record macro a
+`qa` - record macro a.
 
-`q` - stop recording macro
+`q` - stop recording macro.
 
-`@a` - run macro a
+`@a` - run macro a.
 
-`@@` - rerun last run macro
+`@@` - rerun last run macro.
 
 ### Cut and paste
 
-`yy` - yank (copy) a line
+`yy` - yank (copy) a line.
 
-`Nyy` - yank (copy) N lines down
+`Nyy` - yank (copy) N lines down.
 
-`Ny<up|down>` - yank (copy) N lines up or down
+`Ny<up|down>` - yank (copy) N lines up or down.
 
-`yw` - yank (copy) the characters of the word from the cursor position to the start of the next word
+`yw` - yank (copy) the characters of the word from the cursor position to the start of the next word.
 
-`yiw` - yank (copy) word under the cursor
+`yiw` - yank (copy) word under the cursor.
 
-`y$` or `Y` - yank (copy) to end of line
+`y$` or `Y` - yank (copy) to end of line.
 
-`p` - put (paste) the clipboard after cursor
+`p` - put (paste) the clipboard after cursor.
 
-`P` - put (paste) before cursor
+`P` - put (paste) before cursor.
 
-`dd` - delete (cut) a line
+`dd` - delete (cut) a line.
 
-`Ndd` - delete (cut) N lines down
+`Ndd` - delete (cut) N lines down.
 
-`Nd<up|down>` - delete (cut) N lines up or down
+`Nd<up|down>` - delete (cut) N lines up or down.
 
-`dw` - delete (cut) the characters of the word from the cursor position to the start of the next word
+`dw` - delete (cut) the characters of the word from the cursor position to the start of the next word.
 
-`:g/{pattern}/d` - delete all lines containing pattern
+`:g/{pattern}/d` - delete all lines containing pattern.
 
-`:g!/{pattern}/d` - delete all lines not containing pattern
+`:g!/{pattern}/d` - delete all lines not containing pattern.
 
-`d$ or D` - delete (cut) to the end of the line
+`d$ or D` - delete (cut) to the end of the line.
 
-`x` - delete (cut) character
+`x` - delete (cut) character.
 
 ### Indent text
 
-`>>` - indent (move right) line one shiftwidth
+`>>` - indent (move right) line one shiftwidth.
 
-`<<` - de-indent (move left) line one shiftwidth
+`<<` - de-indent (move left) line one shiftwidth.
 
-`>%` - indent a block with () or {} (cursor on brace)
+`>%` - indent a block with () or {} (cursor on brace).
 
-`<%` - de-indent a block with () or {} (cursor on brace)
+`<%` - de-indent a block with () or {} (cursor on brace).
 
 ### Exiting
 
-`:w` - write (save) the file, but don't exit
+`:w` - write (save) the file, but don't exit.
 
-`:wq` - write (save) and quit
+`:wq` - write (save) and quit.
 
-`:q` - quit (fails if there are unsaved changes)
+`:q` - quit (fails if there are unsaved changes).
 
 `:qa` - quit all (fails if there are unsaved changes)
 
-`:q!` - quit and throw away unsaved changes
+`:q!` - quit and throw away unsaved changes.
 
-`:wqa` - write (save) and quit on all tabs
+`:wqa` - write (save) and quit on all tabs.
 
 ### Search and replace
 
-`/pattern` - search for pattern
+`/pattern` - search for pattern.
 
-`?pattern` - search backward for pattern
+`?pattern` - search backward for pattern.
 
-`n` - go forward in matched search result
+`n` - go forward in matched search result.
 
-`N` - go backward in matched search result
+`N` - go backward in matched search result.
 
-`:%s/old/new/g` - replace all old with new throughout file
+`:%s/old/new/g` - replace all old with new throughout file.
 
-`:%s/old/new/gc` - replace all old with new throughout file with confirmations
+`:%s/old/new/gc` - replace all old with new throughout file with confirmations.
 
-`:%s/old/new/gi` - replace global case insensitive
+`:%s/old/new/gi` - replace global case insensitive.
 
-`:%s/old/new/gI` - replace global case sensitive
+`:%s/old/new/gI` - replace global case sensitive.
 
-`:%s/old/new/gIc` - replace global case sensitive with confirmation
+`:%s/old/new/gIc` - replace global case sensitive with confirmation.

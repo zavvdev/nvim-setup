@@ -21,7 +21,8 @@ vim.g.yui_folds = "emphasize"
 vim.g.yui_comments = "fade"
 
 vim.keymap.set("n", "<leader>e", ":Explore<CR>", {})                         -- Open Netrw
-vim.keymap.set("n", "<leader>v", ":Vexplore<CR>", {})                         -- Vertical split from file
+vim.keymap.set("n", "<leader>v", ":Vexplore<CR>", {})                        -- Vertical split from file
+vim.keymap.set("n", "<leader>t", ":tab split<CR>", {})                       -- Open current file in a new tab
 vim.keymap.set("n", "<leader>si", ":lua vim.diagnostic.setqflist()<CR>", {}) -- Show diagnostic errors
 
 -- multiline edit

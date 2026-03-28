@@ -119,13 +119,15 @@ From netrw:
 
 17. Split vertically: `Leader v` from file.
 
-18. Increase window width: `Leader >`.
+18. Open current file in a new tab: `Leader t` from file.
 
-19. Decrease window width: `Leader <`.
+19. Increase window width: `Leader >`.
 
-20. Equalize split size: `Leader =`.
+20. Decrease window width: `Leader <`.
 
-21. Put cursor in normal mode on number and do `A` to increase number or `X` to decrease.
+21. Equalize split size: `Leader =`.
+
+22. Put cursor in normal mode on number and do `A` to increase number or `X` to decrease.
 
 ### LSP
 
